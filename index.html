@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: Arial;
-    background: linear-gradient(135deg, #0f172a, #020617);
+    background: #0f172a;
     color: white;
 }
 
@@ -17,12 +17,8 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background: rgba(0,0,0,0.3);
-    backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
+    padding: 15px 30px;
+    background: #020617;
 }
 
 nav a {
@@ -38,57 +34,42 @@ nav a:hover {
 /* HERO */
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px;
 }
 
 .hero img {
-    width: 130px;
+    width: 120px;
     border-radius: 50%;
-    border: 3px solid #38bdf8;
-    margin-bottom: 20px;
-}
-
-.hero h1 {
-    font-size: 48px;
 }
 
 /* SECTIONS */
 section {
-    padding: 80px 20px;
+    padding: 60px;
     text-align: center;
-}
-
-/* PROJECTS */
-.projects {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-}
-
-.card {
-    background: rgba(255,255,255,0.05);
-    padding: 20px;
-    border-radius: 12px;
-    width: 260px;
 }
 
 /* SOCIAL */
 .social a {
     display: inline-block;
     margin: 10px;
-    color: #38bdf8;
+    padding: 12px 18px;
+    background: #1e293b;
+    border-radius: 8px;
+    color: white;
     text-decoration: none;
+}
+
+.social a:hover {
+    background: #38bdf8;
 }
 
 /* FOOTER */
 footer {
-    text-align: center;
-    padding: 20px;
     background: #020617;
+    padding: 20px;
+    text-align: center;
 }
 
-/* SCROLL SMOOTH */
 html {
     scroll-behavior: smooth;
 }
@@ -119,29 +100,13 @@ html {
 <!-- ABOUT -->
 <section id="about">
     <h2>Hakkımda</h2>
-    <p>Ben Erkan. Web geliştirme öğreniyorum ve modern siteler yapıyorum.</p>
+    <p>Web geliştirme öğreniyorum ve projeler yapıyorum.</p>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
     <h2>Projelerim</h2>
-
-    <div class="projects">
-        <div class="card">
-            <h3>Proje 1</h3>
-            <p>İlk web projem</p>
-        </div>
-
-        <div class="card">
-            <h3>Proje 2</h3>
-            <p>JavaScript uygulaması</p>
-        </div>
-
-        <div class="card">
-            <h3>Proje 3</h3>
-            <p>Mini araç</p>
-        </div>
-    </div>
+    <p>Yakında projelerimi ekleyeceğim.</p>
 </section>
 
 <!-- CONTACT -->
@@ -149,12 +114,29 @@ html {
     <h2>İletişim</h2>
 
     <div class="social">
-        <a href="https://instagram.com" target="_blank">Instagram</a>
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-        <a href="https://t.me" target="_blank">Telegram</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        <a href="https://wa.me" target="_blank">WhatsApp</a>
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/omererkankaya" target="_blank">
+            Instagram
+        </a>
+
+        <!-- Twitter -->
+        <a href="https://twitter.com/Dileyzuzzl" target="_blank">
+            Twitter
+        </a>
+
+        <!-- Telegram -->
+        <a href="https://t.me/Thecoder" target="_blank">
+            Telegram
+        </a>
+
+        <!-- WhatsApp (MESAJ AÇAR ✅) -->
+        <a href="https://wa.me/905425891056" target="_blank">
+            WhatsApp
+        </a>
+
     </div>
+
 </section>
 
 <!-- FOOTER -->
