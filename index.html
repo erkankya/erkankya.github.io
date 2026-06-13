@@ -31,11 +31,22 @@ nav a {
 /* HERO */
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
+}
+
+.hero img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
 .hero h1 {
-    font-size: 50px;
+    font-size: 45px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 18px;
 }
 
 /* SECTIONS */
@@ -64,8 +75,12 @@ section {
     transform: scale(1.05);
 }
 
-.card h3 {
-    margin-top: 0;
+/* SOCIAL */
+.social a {
+    color: #38bdf8;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 /* FOOTER */
@@ -93,8 +108,9 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-    <h1>Merhaba 👋</h1>
-    <p>Ben Erkan, web geliştirici</p>
+    <img src="https://via.placeholder.com/150" alt="profil">
+    <h1>Erkan</h1>
+    <p>Web Developer 🚀</p>
 </div>
 
 <!-- ABOUT -->
@@ -123,13 +139,17 @@ footer {
             <p>Mini uygulama</p>
         </div>
     </div>
-
 </section>
 
 <!-- CONTACT -->
 <section>
     <h2>İletişim</h2>
-    <p>Bana ulaşmak için yakında bilgiler eklenecek.</p>
+
+    <div class="social">
+        <a href="#">Instagram</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+    </div>
 </section>
 
 <!-- FOOTER -->
@@ -139,4 +159,3 @@ footer {
 
 </body>
 </html>
-``
