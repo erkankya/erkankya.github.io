@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Game Studio</title>
+<title>Dileyzî Game Studio</title>
 
 <!-- ✅ ICON FIX -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -25,6 +25,10 @@ nav {
     padding: 15px 40px;
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(10px);
+}
+
+nav h2 {
+    margin: 0;
 }
 
 nav a {
@@ -49,6 +53,10 @@ nav a:hover::after {
     width: 100%;
 }
 
+nav a:hover {
+    color: #38bdf8;
+}
+
 /* HERO */
 .hero {
     text-align: center;
@@ -58,10 +66,12 @@ nav a:hover::after {
 .logo {
     font-size: 40px;
     color: #38bdf8;
+    font-weight: bold;
 }
 
 .slogan {
     color: #94a3b8;
+    margin-top: 10px;
 }
 
 /* SECTION */
@@ -96,6 +106,21 @@ section {
     padding-left: 18px;
 }
 
+/* ABOUT */
+.about-box {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(255,255,255,0.05);
+    padding: 30px;
+    border-radius: 15px;
+    line-height: 1.7;
+}
+
+.highlight {
+    color: #38bdf8;
+    font-weight: bold;
+}
+
 /* SOCIAL */
 .social a {
     margin: 10px;
@@ -120,24 +145,6 @@ footer {
 html {
     scroll-behavior: smooth;
 }
-.about-box {
-    max-width: 700px;
-    margin: auto;
-    background: rgba(255,255,255,0.05);
-    padding: 30px;
-    border-radius: 15px;
-    line-height: 1.7;
-    font-size: 16px;
-}
-
-.about-box p {
-    margin-bottom: 15px;
-}
-
-.highlight {
-    color: #38bdf8;
-    font-weight: bold;
-}
 </style>
 
 </head>
@@ -146,7 +153,7 @@ html {
 
 <!-- NAVBAR -->
 <nav>
-    <h2>Game Studio</h2>
+    <h2>Dileyzî Game Studio</h2>
     <div>
         <a href="#home">Home</a>
         <a href="#services">Services</a>
@@ -157,8 +164,8 @@ html {
 
 <!-- HERO -->
 <div id="home" class="hero">
-    <div class="logo">Game Studio</div>
-    <div class="slogan">Building scalable Unity game systems</div>
+    <div class="logo">Dileyzî Game Studio</div>
+    <div class="slogan">Building scalable and high-quality Unity game systems</div>
 </div>
 
 <!-- SERVICES -->
@@ -175,7 +182,7 @@ html {
                 <li>Drag and drop mechanics</li>
                 <li>Grid and tile systems</li>
                 <li>Turn-based systems</li>
-                <li>Card and board logic</li>
+                <li>Card and board game logic</li>
                 <li>Save and load systems</li>
             </ul>
         </div>
@@ -183,8 +190,8 @@ html {
         <div class="card">
             <h3>Mobile Game Prototyping</h3>
             <ul>
-                <li>Hypercasual games</li>
-                <li>Puzzle and card mechanics</li>
+                <li>Hypercasual and mobile games</li>
+                <li>Puzzle and card prototypes</li>
                 <li>Playable demos in 1–2 weeks</li>
                 <li>Publisher-ready builds</li>
             </ul>
@@ -202,10 +209,10 @@ html {
         <div class="card">
             <h3>UI / UX Integration</h3>
             <ul>
-                <li>Menus and interfaces</li>
-                <li>Shop systems</li>
+                <li>Menu systems</li>
+                <li>Shop interfaces</li>
                 <li>HUD design</li>
-                <li>Animations</li>
+                <li>Animations and interactions</li>
             </ul>
         </div>
 
@@ -215,7 +222,7 @@ html {
                 <li>Firebase setup</li>
                 <li>Analytics systems</li>
                 <li>Ads integration</li>
-                <li>User systems</li>
+                <li>User login systems</li>
             </ul>
         </div>
 
@@ -237,26 +244,22 @@ html {
 
     <div class="about-box">
         <p>
-            We are a passionate Unity game development team focused on building 
+            We are a professional Unity development team specializing in building
             high-quality and scalable game systems.
         </p>
 
         <p>
-            From gameplay mechanics to complete prototypes, we help developers 
-            and studios turn their ideas into playable experiences.
-        </p>
-
-        <p>
-            Whether you need a small system or a full project, we are ready to 
-            support you at every stage of development.
+            From gameplay mechanics to full project support, we help teams and 
+            individuals turn their ideas into real and playable experiences.
         </p>
 
         <p class="highlight">
             If you have a project, we would be happy to help you.  
-            Feel free to contact us anytime.
+            Please feel free to contact us.
         </p>
     </div>
 </section>
+
 <!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
@@ -278,11 +281,12 @@ html {
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
+
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 Game Studio</p>
+    <p>© 2026 Dileyzî Game Studio</p>
 </footer>
 
 </body>
