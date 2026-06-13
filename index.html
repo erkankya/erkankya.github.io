@@ -27,6 +27,10 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #38bdf8;
+}
+
 /* HERO */
 .hero {
     text-align: center;
@@ -44,39 +48,19 @@ section {
     text-align: center;
 }
 
-/* PROJECT CARDS */
-.projects {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-}
-
-.card button {
-    margin-top: 10px;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 6px;
-    background: #38bdf8;
-    cursor: pointer;
-}
-
 /* SOCIAL */
 .social a {
     display: inline-block;
     margin: 10px;
-    padding: 10px;
+    padding: 10px 15px;
     background: #1e293b;
     border-radius: 8px;
     color: white;
     text-decoration: none;
+}
+
+.social a:hover {
+    background: #38bdf8;
 }
 
 /* FOOTER */
@@ -99,16 +83,16 @@ html {
 <nav>
     <h2>Erkan</h2>
     <div>
-        #homeAna Sayfa</a>
-        #aboutHakkımda</a>
-        #projectsProjeler</a>
-        #contactİletişim</a>
+        <a href="#home">Ana Sayfa</a>
+        <a href="#about">Hakkımda</a>
+        <a href="#projects">Projeler</a>
+        <a href="#contact">İletişim</a>
     </div>
 </nav>
 
 <!-- HERO -->
 <div id="home" class="hero">
-    https://i.pravatar.cc/150?img=12
+    <img src="https://i.pravatar.cc/150?img=12">
     <h1>Erkan</h1>
     <p>Web Developer 🚀</p>
 </div>
@@ -122,35 +106,7 @@ html {
 <!-- PROJECTS -->
 <section id="projects">
     <h2>Projelerim</h2>
-
-    <div class="projects">
-
-        <div class="card">
-            <h3>Proje 1</h3>
-            <p>İlk web projem</p>
-            <button onclick="window.open('https://github.com','_blank')">
-                İncele
-            </button>
-        </div>
-
-        <div class="card">
-            <h3>Proje 2</h3>
-            <p>JavaScript uygulaması</p>
-            <button onclick="window.open('https://google.com','_blank')">
-                İncele
-            </button>
-        </div>
-
-        <div class="card">
-            <h3>Proje 3</h3>
-            <p>Mini araç</p>
-            <button onclick="window.open('https://youtube.com','_blank')">
-                İncele
-            </button>
-        </div>
-
-    </div>
-
+    <p>Yakında projelerimi ekleyeceğim.</p>
 </section>
 
 <!-- CONTACT -->
@@ -158,11 +114,12 @@ html {
     <h2>İletişim</h2>
 
     <div class="social">
-        https://instagram.com/omererkankayaInstagram</a>
-        https://twitter.com/DileyzuzzlTwitter</a>
-        https://t.me/ThecoderTelegram</a>
-        https://wa.me/905425891056WhatsApp</a>
+        <a href="https://instagram.com/omererkankaya" target="_blank">Instagram</a>
+        <a href="https://twitter.com/Dileyzuzzl" target="_blank">Twitter</a>
+        <a href="https://t.me/Thecoder" target="_blank">Telegram</a>
+        <a href="https://wa.me/905425891056" target="_blank">WhatsApp</a>
     </div>
+
 </section>
 
 <!-- FOOTER -->
@@ -172,3 +129,4 @@ html {
 
 </body>
 </html>
+``
