@@ -2,26 +2,34 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<title>Admin Panel</title>
+<title>Admin Dashboard</title>
 
 <style>
 body {
+    margin: 0;
     font-family: Arial;
-    background: #0f172a;
+    background: #020617;
     color: white;
+}
+
+/* HEADER */
+header {
     text-align: center;
-    padding: 50px;
+    padding: 20px;
+    background: #0f172a;
 }
 
 /* LOGIN */
 #loginBox {
+    text-align: center;
     margin-top: 100px;
 }
 
 input {
     padding: 10px;
+    border-radius: 6px;
+    border: none;
     width: 200px;
-    margin: 10px;
 }
 
 button {
@@ -29,49 +37,121 @@ button {
     background: #38bdf8;
     border: none;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 /* PANEL */
 #panel {
     display: none;
-    margin-top: 50px;
+    padding: 20px;
 }
 
-.box {
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stat-box {
     background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+}
+
+/* CHART */
+.chart {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.bar {
+    width: 50px;
+    background: #38bdf8;
     margin: 10px auto;
+    color: black;
+}
+
+/* ORDERS */
+.card {
+    background: #1e293b;
+    margin: 15px auto;
     padding: 15px;
     width: 300px;
     border-radius: 8px;
 }
 </style>
+
 </head>
 
 <body>
 
-<h1>Admin Panel</h1>
+<header>
+    <h1>Admin Dashboard</h1>
+</header>
 
 <!-- LOGIN -->
 <div id="loginBox">
     <input type="password" id="password" placeholder="Şifre">
     <br>
-    <button onclick="login()">Giriş Yap</button>
+    <button onclick="login()">Giriş</button>
 </div>
 
-<!-- ADMIN PANEL -->
+<!-- PANEL -->
 <div id="panel">
-    <h2>Siparişler</h2>
 
-    <div class="box">
-        <p><b>İsim:</b> Ahmet</p>
-        <p><b>Paket:</b> Basic</p>
-        <p><b>Mesaj:</b> Oyun yaptırmak istiyorum</p>
+    <!-- STATS -->
+    <div class="stats">
+        <div class="stat-box">
+            <h3>Toplam Sipariş</h3>
+            <p>3</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>Basic</h3>
+            <p>1</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>Standard</h3>
+            <p>1</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>Premium</h3>
+            <p>1</p>
+        </div>
     </div>
 
-    <div class="box">
+    <!-- CHART -->
+    <div class="chart">
+        <h2>Paket Dağılımı</h2>
+
+        <div class="bar" style="height: 50px;">Basic</div>
+        <div class="bar" style="height: 80px;">Standard</div>
+        <div class="bar" style="height: 120px;">Premium</div>
+    </div>
+
+    <!-- ORDERS -->
+    <h2>Siparişler</h2>
+
+    <div class="card">
+        <p><b>İsim:</b> Ahmet</p>
+        <p><b>Paket:</b> Basic</p>
+        <p>Hypercasual oyun</p>
+    </div>
+
+    <div class="card">
         <p><b>İsim:</b> Mehmet</p>
+        <p><b>Paket:</b> Standard</p>
+        <p>Inventory system</p>
+    </div>
+
+    <div class="card">
+        <p><b>İsim:</b> Ayşe</p>
         <p><b>Paket:</b> Premium</p>
-        <p><b>Mesaj:</b> Multiplayer oyun lazım</p>
+        <p>Multiplayer oyun</p>
     </div>
 
 </div>
@@ -80,7 +160,7 @@ button {
 function login() {
     var pass = document.getElementById("password").value;
 
-    if(pass === "1234") {
+    if(pass === "admin123") {
         document.getElementById("loginBox").style.display = "none";
         document.getElementById("panel").style.display = "block";
     } else {
