@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Admin Panel</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+/* LOGIN */
+#loginBox {
+    margin-top: 100px;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    background: #38bdf8;
+    border: none;
+    cursor: pointer;
+}
+
+/* PANEL */
+#panel {
+    display: none;
+    margin-top: 50px;
+}
+
+.box {
+    background: #1e293b;
+    margin: 10px auto;
+    padding: 15px;
+    width: 300px;
+    border-radius: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Admin Panel</h1>
+
+<!-- LOGIN -->
+<div id="loginBox">
+    <input type="password" id="password" placeholder="Şifre">
+    <br>
+    <button onclick="login()">Giriş Yap</button>
+</div>
+
+<!-- ADMIN PANEL -->
+<div id="panel">
+    <h2>Siparişler</h2>
+
+    <div class="box">
+        <p><b>İsim:</b> Ahmet</p>
+        <p><b>Paket:</b> Basic</p>
+        <p><b>Mesaj:</b> Oyun yaptırmak istiyorum</p>
+    </div>
+
+    <div class="box">
+        <p><b>İsim:</b> Mehmet</p>
+        <p><b>Paket:</b> Premium</p>
+        <p><b>Mesaj:</b> Multiplayer oyun lazım</p>
+    </div>
+
+</div>
+
+<script>
+function login() {
+    var pass = document.getElementById("password").value;
+
+    if(pass === "1234") {
+        document.getElementById("loginBox").style.display = "none";
+        document.getElementById("panel").style.display = "block";
+    } else {
+        alert("Şifre yanlış!");
+    }
+}
+</script>
+
+</body>
+</html>
