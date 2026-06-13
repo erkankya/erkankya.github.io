@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Game Studio</title>
 
 <!-- ICONS -->
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 body {
@@ -17,18 +16,44 @@ body {
     color: white;
 }
 
-/* NAVBAR */
+/* 🔥 NAVBAR PREMIUM */
 nav {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
-    background: rgba(0,0,0,0.4);
+    padding: 15px 40px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
 }
 
+nav h2 {
+    margin: 0;
+}
+
+/* MENU LINKS */
 nav a {
+    position: relative;
     color: white;
-    margin-left: 15px;
+    margin-left: 20px;
     text-decoration: none;
+    font-size: 16px;
+}
+
+/* HOVER ALT ÇİZGİ ANİMASYON */
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
 
 nav a:hover {
@@ -38,10 +63,10 @@ nav a:hover {
 /* HERO */
 .hero {
     text-align: center;
-    padding: 80px;
+    padding: 100px 20px;
 }
 
-/* SECTIONS */
+/* SECTION */
 section {
     padding: 60px 20px;
     text-align: center;
@@ -90,6 +115,7 @@ footer {
     background: #020617;
 }
 
+/* SMOOTH SCROLL */
 html {
     scroll-behavior: smooth;
 }
@@ -98,56 +124,41 @@ html {
 
 <body>
 
-<!-- NAVBAR -->
+<!-- ✅ PREMIUM NAVBAR -->
 <nav>
     <h2>Game Studio</h2>
     <div>
-        <a href="#home">Ana Sayfa</a>
-        <a href="#services">Hizmetler</a>
-        <a href="#contact">İletişim</a>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
     </div>
 </nav>
 
 <!-- HERO -->
 <div id="home" class="hero">
     <h1>Unity Game Development Studio 🎮</h1>
-    <p>Profesyonel oyun sistemleri ve geliştirme</p>
+    <p>Professional game systems and development services</p>
 </div>
 
 <!-- SERVICES -->
 <section id="services">
-    <h2>Hizmetlerimiz</h2>
+    <h2>Our Services</h2>
 
     <div class="services">
 
         <div class="card">
-            <h3>Gameplay Sistemleri</h3>
-            <p>Inventory, Level, Grid, Save/Load</p>
+            <h3>Gameplay Systems</h3>
+            <p>Inventory, Level, Grid, Save/Load systems</p>
         </div>
 
         <div class="card">
-            <h3>Mobile Prototype</h3>
-            <p>Hypercasual & demo geliştirme</p>
+            <h3>Mobile Prototyping</h3>
+            <p>Hypercasual & fast demo development</p>
         </div>
 
         <div class="card">
-            <h3>WebGL Oyunlar</h3>
-            <p>Browser & multiplayer oyunlar</p>
-        </div>
-
-        <div class="card">
-            <h3>UI / UX</h3>
-            <p>HUD, Menü, animasyon</p>
-        </div>
-
-        <div class="card">
-            <h3>Backend</h3>
-            <p>Firebase, Ads, login sistemleri</p>
-        </div>
-
-        <div class="card">
-            <h3>Optimization</h3>
-            <p>Performans ve bug fix</p>
+            <h3>WebGL Games</h3>
+            <p>Browser & multiplayer games</p>
         </div>
 
     </div>
@@ -155,10 +166,9 @@ html {
 
 <!-- CONTACT -->
 <section id="contact">
-    <h2>İletişim</h2>
+    <h2>Contact</h2>
 
     <div class="social">
-
         <a href="https://instagram.com/omererkankaya" target="_blank">
             <i class="fab fa-instagram"></i>
         </a>
@@ -174,9 +184,7 @@ html {
         <a href="https://wa.me/905425891056" target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
-
     </div>
-
 </section>
 
 <!-- FOOTER -->
@@ -186,4 +194,3 @@ html {
 
 </body>
 </html>
-
