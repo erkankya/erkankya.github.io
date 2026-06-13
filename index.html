@@ -63,3 +63,143 @@ nav a:hover {
 
 .hero p {
     font-size: 18px;
+    color: #94a3b8;
+}
+
+.hero button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #38bdf8, #0ea5e9);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    transform: scale(1.05);
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* PROJECTS */
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 12px;
+    width: 260px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* SOCIAL */
+.social a {
+    display: inline-block;
+    margin: 10px;
+    color: #38bdf8;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Erkan</h2>
+    <div>
+        Ana Sayfa
+        Hakkımda
+        Projeler
+        İletişim
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <img src="https://i.pravatar.cc/150?img=12">
+    <h1>Erkan</h1>
+    <p>Web Developer 🚀</p>
+    <button onclick="alert('Hoşgeldin!')">Benimle İletişime Geç</button>
+</div>
+
+<!-- ABOUT -->
+<section>
+    <h2>Hakkımda</h2>
+    <p>Web geliştirme öğreniyorum ve modern siteler yapıyorum.</p>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <h2>Projelerim</h2>
+
+    <div class="projects">
+        <div class="card">
+            <h3>Proje 1</h3>
+            <p>İlk web projem</p>
+        </div>
+
+        <div class="card">
+            <h3>Proje 2</h3>
+            <p>JavaScript uygulaması</p>
+        </div>
+
+        <div class="card">
+            <h3>Proje 3</h3>
+            <p>Mini araç</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+    <h2>İletişim</h2>
+
+    <div class="social">
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://t.me" target="_blank">Telegram</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://wa.me" target="_blank">WhatsApp</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Erkan</p>
+</footer>
+
+</body>
+</html>
+``
