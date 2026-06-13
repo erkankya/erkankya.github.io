@@ -27,15 +27,11 @@ nav {
     backdrop-filter: blur(10px);
 }
 
-nav h2 {
-    margin: 0;
-}
-
 nav a {
-    position: relative;
     color: white;
     margin-left: 20px;
     text-decoration: none;
+    position: relative;
 }
 
 nav a::after {
@@ -95,9 +91,10 @@ section {
     text-align: center;
 }
 
-.card p {
-    font-size: 14px;
-    color: #cbd5f5;
+/* LIST FIX ✅ */
+.card ul {
+    padding-left: 18px;
+    line-height: 1.6;
 }
 
 /* SOCIAL */
@@ -133,110 +130,105 @@ html {
 <nav>
     <h2>Game Studio</h2>
     <div>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        Home
+        Services
+        Contact
     </div>
 </nav>
 
 <!-- HERO -->
-<div id="home" class="hero">
+<div class="hero">
     <h1>Unity Game Development Studio 🎮</h1>
-    <p>Professional game systems, prototyping and optimization services</p>
+    <p>Professional systems, prototyping, and optimization for modern games</p>
 </div>
 
 <!-- SERVICES -->
-<section id="services">
+<section>
     <h2>Our Services</h2>
 
     <div class="services">
 
         <div class="card">
             <h3>Unity Gameplay Systems</h3>
-            <p>
-            Inventory systems<br>
-            Level systems (start/end/checkpoints)<br>
-            Drag & drop mechanics<br>
-            Tile & grid based systems<br>
-            Turn-based systems<br>
-            Rummy / card / board game logic<br>
-            Save & load systems
-            </p>
+            <ul>
+                <li>Inventory systems</li>
+                <li>Level systems with start, finish, and checkpoints</li>
+                <li>Drag and drop mechanics</li>
+                <li>Tile and grid based systems</li>
+                <li>Turn-based game systems</li>
+                <li>Card and board game logic</li>
+                <li>Save and load systems</li>
+            </ul>
         </div>
 
         <div class="card">
             <h3>Mobile Game Prototyping</h3>
-            <p>
-            Hypercasual games<br>
-            Puzzle & card games<br>
-            Playable demos in 1–2 weeks<br>
-            Publisher-ready game demos
-            </p>
+            <ul>
+                <li>Hypercasual and lightweight mobile games</li>
+                <li>Puzzle and card game prototypes</li>
+                <li>Playable demos within 1–2 weeks</li>
+                <li>Publisher-ready demo builds</li>
+            </ul>
         </div>
 
         <div class="card">
             <h3>WebGL Games</h3>
-            <p>
-            Browser-based games<br>
-            Simple multiplayer (Photon, etc.)<br>
-            Educational & simulation games
-            </p>
+            <ul>
+                <li>Browser-based games</li>
+                <li>Simple multiplayer systems using Photon</li>
+                <li>Educational and simulation projects</li>
+            </ul>
         </div>
 
         <div class="card">
-            <h3>UI / UX + Unity Integration</h3>
-            <p>
-            Menu systems<br>
-            Shop & upgrade screens<br>
-            HUD design<br>
-            Button animations & interactions
-            </p>
+            <h3>UI / UX and Unity Integration</h3>
+            <ul>
+                <li>Menu systems</li>
+                <li>Shop and upgrade screens</li>
+                <li>HUD design</li>
+                <li>Button animations and interactions</li>
+            </ul>
         </div>
 
         <div class="card">
-            <h3>SDK / Backend Integration</h3>
-            <p>
-            Firebase integration<br>
-            GameAnalytics setup<br>
-            Ads (AdMob, Unity Ads)<br>
-            Login & user systems
-            </p>
+            <h3>SDK and Backend Integration</h3>
+            <ul>
+                <li>Firebase integration</li>
+                <li>GameAnalytics setup</li>
+                <li>Ad systems such as AdMob and Unity Ads</li>
+                <li>User login and account systems</li>
+            </ul>
         </div>
 
         <div class="card">
-            <h3>Fix & Optimization</h3>
-            <p>
-            Performance optimization<br>
-            Build error fixes<br>
-            WebGL crash fixing
-            </p>
+            <h3>Bug Fix and Optimization</h3>
+            <ul>
+                <li>Performance optimization</li>
+                <li>Build error fixing</li>
+                <li>WebGL crash debugging</li>
+            </ul>
         </div>
 
     </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section>
     <h2>Contact</h2>
 
     <div class="social">
-
         <a href="https://instagram.com/omererkankaya" target="_blank">
             <i class="fab fa-instagram"></i>
         </a>
-
         <a href="https://twitter.com/Dileyzuzzl" target="_blank">
             <i class="fab fa-x-twitter"></i>
         </a>
-
         <a href="https://t.me/Thecoder" target="_blank">
             <i class="fab fa-telegram"></i>
         </a>
-
         <a href="https://wa.me/905425891056" target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
-
     </div>
 
 </section>
