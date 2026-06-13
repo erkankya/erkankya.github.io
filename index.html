@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Game Studio</title>
 
+<!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 body {
     margin: 0;
@@ -25,10 +28,6 @@ nav a {
     color: white;
     margin-left: 15px;
     text-decoration: none;
-}
-
-nav a:hover {
-    color: #38bdf8;
 }
 
 /* HERO */
@@ -64,18 +63,56 @@ section {
     box-shadow: 0 0 15px #38bdf8;
 }
 
-.card p {
-    font-size: 14px;
-    color: #cbd5f5;
+/* PROJECTS */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-/* CONTACT */
-.contact-btn {
+.project {
+    width: 300px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* VIDEO */
+.video iframe {
+    width: 80%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+/* SOCIAL */
+.social a {
+    margin: 10px;
+    font-size: 22px;
+    color: white;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #38bdf8;
+    transform: scale(1.2);
+}
+
+/* BUTTON */
+.btn {
     padding: 12px 20px;
     background: #38bdf8;
     border: none;
     cursor: pointer;
-    margin-top: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
 }
 
 /* FOOTER */
@@ -89,7 +126,6 @@ html {
     scroll-behavior: smooth;
 }
 </style>
-
 </head>
 
 <body>
@@ -100,6 +136,7 @@ html {
     <div>
         <a href="#home">Ana Sayfa</a>
         <a href="#services">Hizmetler</a>
+        <a href="#projects">Projeler</a>
         <a href="#contact">İletişim</a>
     </div>
 </nav>
@@ -107,7 +144,8 @@ html {
 <!-- HERO -->
 <div id="home" class="hero">
     <h1>Unity Game Development Studio 🎮</h1>
-    <p>Profesyonel oyun sistemleri ve geliştirme hizmetleri</p>
+    <p>Profesyonel oyun sistemleri ve geliştirme</p>
+    <button class="btn">Proje Başlat</button>
 </div>
 
 <!-- SERVICES -->
@@ -117,75 +155,94 @@ html {
     <div class="services">
 
         <div class="card">
-            <h3>Unity Gameplay Sistemleri</h3>
-            <p>
-            Inventory system<br>
-            Level sistemi<br>
-            Drag & drop sistemleri<br>
-            Grid / tile sistemleri<br>
-            Save & load sistemi
-            </p>
+            <h3>Gameplay Sistemleri</h3>
+            <p>Inventory, Level, Grid, Save/Load</p>
         </div>
 
         <div class="card">
-            <h3>Mobile Game Prototyping</h3>
-            <p>
-            Hypercasual oyunlar<br>
-            Puzzle & card sistemleri<br>
-            Hızlı demo üretimi
-            </p>
+            <h3>Mobile Prototype</h3>
+            <p>Hypercasual & demo geliştirme</p>
         </div>
 
         <div class="card">
             <h3>WebGL Oyunlar</h3>
-            <p>
-            Browser oyunları<br>
-            Multiplayer sistemler<br>
-            Eğitim & simülasyon projeleri
-            </p>
+            <p>Browser & multiplayer oyunlar</p>
         </div>
 
         <div class="card">
-            <h3>UI / UX + Unity</h3>
-            <p>
-            Menü sistemleri<br>
-            Shop & upgrade ekranları<br>
-            HUD tasarımı
-            </p>
+            <h3>UI / UX</h3>
+            <p>HUD, Menü, animasyon</p>
         </div>
 
         <div class="card">
-            <h3>SDK / Backend</h3>
-            <p>
-            Firebase<br>
-            GameAnalytics<br>
-            Ads entegrasyonu<br>
-            Login sistemleri
-            </p>
+            <h3>Backend</h3>
+            <p>Firebase, Ads, login sistemleri</p>
         </div>
 
         <div class="card">
-            <h3>Fix & Optimization</h3>
-            <p>
-            Performans artırma<br>
-            Build hataları çözme<br>
-            WebGL crash fix
-            </p>
+            <h3>Optimization</h3>
+            <p>Performans ve bug fix</p>
         </div>
 
     </div>
 </section>
 
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projelerimiz</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <img src="https://via.placeholder.com/300x180">
+            <p>Hypercasual Game</p>
+        </div>
+
+        <div class="project">
+            <img src="https://via.placeholder.com/300x180">
+            <p>WebGL Multiplayer</p>
+        </div>
+
+        <div class="project">
+            <img src="https://via.placeholder.com/300x180">
+            <p>Puzzle Game</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- VIDEO DEMO -->
+<section class="video">
+    <h2>Demo Video</h2>
+
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+    title="demo video" frameborder="0" allowfullscreen></iframe>
+
+</section>
+
 <!-- CONTACT -->
 <section id="contact">
-    <h2>İletişime Geç</h2>
+    <h2>İletişim</h2>
 
-    <p>Projen için bize ulaş 👇</p>
+    <div class="social">
 
-    <button class="contact-btn"
-    onclick="window.open('https://wa.me/905425891056','_blank')">
-        WhatsApp ile iletişim
-    </button>
+        <a href="https://instagram.com/omererkankaya" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://twitter.com/Dileyzuzzl" target="_blank">
+            <i class="fab fa-x-twitter"></i>
+        </a>
+
+        <a href="https://t.me/Thecoder" target="_blank">
+            <i class="fab fa-telegram"></i>
+        </a>
+
+        <a href="https://wa.me/905425891056" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+    </div>
 
 </section>
 
