@@ -27,19 +27,14 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #38bdf8;
+}
+
 /* HERO */
 .hero {
     text-align: center;
     padding: 80px;
-}
-
-.hero h1 {
-    font-size: 45px;
-    margin: 0;
-}
-
-.hero p {
-    color: #94a3b8;
 }
 
 /* SECTION */
@@ -69,10 +64,6 @@ section {
     box-shadow: 0 0 20px #38bdf8;
 }
 
-.card h3 {
-    margin-top: 0;
-}
-
 .card p {
     font-size: 14px;
     color: #cbd5f5;
@@ -89,6 +80,10 @@ section {
     text-decoration: none;
 }
 
+.social a:hover {
+    background: #38bdf8;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
@@ -96,6 +91,7 @@ footer {
     background: #020617;
 }
 
+/* SMOOTH SCROLL */
 html {
     scroll-behavior: smooth;
 }
@@ -109,9 +105,9 @@ html {
 <nav>
     <h2>Game Studio</h2>
     <div>
-        #homeAna Sayfa</a>
-        #servicesHizmetler</a>
-        #contactİletişim</a>
+        <a href="#home">Ana Sayfa</a>
+        <a href="#services">Hizmetler</a>
+        <a href="#contact">İletişim</a>
     </div>
 </nav>
 
@@ -131,10 +127,10 @@ html {
             <h3>Unity Gameplay Sistemleri</h3>
             <p>
             Inventory system<br>
-            Level / checkpoint sistemi<br>
+            Level system<br>
             Grid & tile sistemleri<br>
-            Rummy / card logic<br>
-            Save & load sistemleri
+            Card / board logic<br>
+            Save / load sistemi
             </p>
         </div>
 
@@ -142,9 +138,9 @@ html {
             <h3>Mobile Game Prototyping</h3>
             <p>
             Hypercasual oyunlar<br>
-            Puzzle & card sistemleri<br>
+            Puzzle sistemleri<br>
             1-2 haftada demo<br>
-            Publisher demo hazırlama
+            Publisher hazır demo
             </p>
         </div>
 
@@ -153,7 +149,7 @@ html {
             <p>
             Browser oyunları<br>
             Multiplayer (Photon)<br>
-            Eğitim & simülasyon
+            Eğitim oyunları
             </p>
         </div>
 
@@ -161,28 +157,28 @@ html {
             <h3>UI / UX + Unity</h3>
             <p>
             Menü sistemleri<br>
-            Shop & upgrade ekranları<br>
-            HUD tasarım<br>
-            Animasyon & interaction
+            Shop ekranları<br>
+            HUD tasarımı<br>
+            Animasyon
             </p>
         </div>
 
         <div class="card">
-            <h3>Backend & SDK</h3>
+            <h3>SDK / Backend</h3>
             <p>
             Firebase<br>
             GameAnalytics<br>
-            Ads (AdMob / Unity Ads)<br>
-            Login sistemleri
+            Ads entegrasyonu<br>
+            Login sistemi
             </p>
         </div>
 
         <div class="card">
             <h3>Bug Fix & Optimization</h3>
             <p>
-            Performans optimizasyonu<br>
-            Build hataları<br>
-            WebGL crash fix
+            Performans artırma<br>
+            Build fix<br>
+            WebGL crash çözme
             </p>
         </div>
 
@@ -194,10 +190,10 @@ html {
     <h2>İletişim</h2>
 
     <div class="social">
-        https://instagram.com/omererkankayaInstagram</a>
-        https://twitter.com/DileyzuzzlTwitter</a>
-        https://t.me/ThecoderTelegram</a>
-        https://wa.me/905425891056WhatsApp</a>
+        <a href="https://instagram.com/omererkankaya" target="_blank">Instagram</a>
+        <a href="https://twitter.com/Dileyzuzzl" target="_blank">Twitter</a>
+        <a href="https://t.me/Thecoder" target="_blank">Telegram</a>
+        <a href="https://wa.me/905425891056" target="_blank">WhatsApp</a>
     </div>
 
 </section>
@@ -209,4 +205,3 @@ html {
 
 </body>
 </html>
-``
