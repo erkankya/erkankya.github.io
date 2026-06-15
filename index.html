@@ -145,6 +145,69 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+    /* ✅ Portfolio Layout */
+#portfolio .services,
+#videos .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* ✅ Kart upgrade */
+#portfolio .card,
+#videos .card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.4s;
+    text-align: center;
+    padding: 0;
+}
+
+/* ✅ Hover efekti (pro görünüm) */
+#portfolio .card:hover,
+#videos .card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 0 20px rgba(56,189,248,0.6);
+}
+
+/* ✅ Görseller */
+#portfolio .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ✅ Videolar */
+#videos .card video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ✅ Başlık */
+#portfolio .card h3,
+#videos .card h3 {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+/* ✅ Smooth hover glow */
+#portfolio .card::after,
+#videos .card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: 0.4s;
+}
+
+#portfolio .card:hover::after,
+#videos .card:hover::after {
+    background: rgba(56, 189, 248, 0.08);
+}
 </style>
 
 </head>
@@ -238,6 +301,57 @@ html {
     </div>
 </section>
 
+<!-- ✅ PORTFOLIO -->
+<section id="portfolio">
+    <h2>Portfolio</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <img src="images/image1.jpg" style="width:100%; border-radius:10px;">
+            <h3>Mountain Arena Level</h3>
+        </div>
+
+        <div class="card">
+            <img src="images/image2.jpg" style="width:100%; border-radius:10px;">
+            <h3>Playable Terrain</h3>
+        </div>
+
+        <div class="card">
+            <img src="images/image3.jpg" style="width:100%; border-radius:10px;">
+            <h3>Village Prototype</h3>
+        </div>
+
+        <div class="card">
+            <img src="images/image4.jpg" style="width:100%; border-radius:10px;">
+            <h3>Forest System</h3>
+        </div>
+
+    </div>
+</section>
+
+<!-- ✅ VIDEOS -->
+<section id="videos">
+    <h2>Gameplay Videos</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <video controls>
+                <source src="images/video1.mp4" type="video/mp4">
+            </video>
+            <h3>Gameplay 1</h3>
+        </div>
+
+        <div class="card">
+            <video controls>
+                <source src="images/video2.mp4" type="video/mp4">
+            </video>
+            <h3>Gameplay 2</h3>
+        </div>
+
+    </div>
+</section>
 <!-- ABOUT -->
 <section id="about">
     <h2>About Us</h2>
